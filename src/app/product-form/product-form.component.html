@@ -1,0 +1,17 @@
+<div class="form-container">
+    <form (ngSubmit)="onSubmit()" class="product-form">
+      <div class="form-group">
+        <label for="productId">Product ID</label>
+        <input type="text" id="productId" [(ngModel)]="formData.productId" name="productId" required>
+      </div>
+      <div class="form-group">
+        <label for="batchId">Batch ID</label>
+        <input type="text" id="batchId" [(ngModel)]="formData.batchId" name="batchId" required>
+      </div>
+      <div class="form-group checkbox-group">
+        <label for="isForRepeatCombo">Is for Repeat Combo</label>
+        <input type="checkbox" id="isForRepeatCombo" [(ngModel)]="formData.isForRepeatCombo" name="isForRepeatCombo">
+      </div>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>

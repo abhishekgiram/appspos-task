@@ -1,0 +1,23 @@
+<div>
+    <h2>Selected Items</h2>
+    <ul>
+     
+    </ul>
+  </div>
+
+
+  <div *ngIf="selectedItems">
+    <div class="section">
+      <h4>Set Desert</h4>
+      <li *ngFor="let item of showSelectedDes">{{ item }}</li>
+    </div>
+    <div class="section">
+      <h4>Set Drinks</h4>
+      <li *ngFor="let item of showSelectedDri">{{ item }}</li>
+    </div>
+    <div class="section">
+      <h4>Set Mexican</h4>
+      <li *ngFor="let item of showSelectedMix">{{ item }}</li>
+    </div>
+  </div>
+  
